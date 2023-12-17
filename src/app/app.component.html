@@ -7,7 +7,11 @@
   <po-page-default p-title="AppName">
     <p> AppName page </p>
 
+    <!--
+      [(ngModel)]="stateOption"
+    -->
     <po-select
+    class="po-md-4"
         name="select"
         p-label="PO Select"
         [p-options]="stateOptions"
@@ -15,6 +19,7 @@
       </po-select>
 
       <po-select
+       class="po-md-8"
       name="select2"
       p-label="PO Select2"
       [p-options]="stateOptions"
