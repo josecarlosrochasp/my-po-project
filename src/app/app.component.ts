@@ -33,6 +33,10 @@ export class AppComponent implements OnDestroy, OnInit {
     //this.statesSubscription?.unsubscribe();
   }
 
+  onChangeState() {
+    console.log('state',this.stateOption);
+  }
+
   initialize() {
     this.state = '01'
     this.stateOptions = [
