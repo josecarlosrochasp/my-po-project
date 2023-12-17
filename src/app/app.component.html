@@ -15,9 +15,17 @@
         name="select"
         p-label="PO Select"
         [p-options]="stateOptions"
-        [(ngModel)]="stateOption"
       >
       </po-select>
+
+      <po-input
+      class="po-md-5"
+      name="optionsGroup"
+      [(ngModel)]="stateOption"
+      p-label="New Options Group"
+      p-required
+    >
+    </po-input>
 
       <po-select
        class="po-md-8"
